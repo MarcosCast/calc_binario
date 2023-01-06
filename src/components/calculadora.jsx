@@ -1,4 +1,5 @@
 import './calculadora.scss';
+//import'./calculadora.css';
 
 function Calculator() {
     return(
