@@ -1,5 +1,5 @@
-import Calculadora from './components/Calculadora.jsx'
-import './App.scss';
+import Calculadora from './components/Calculadora';
+import './App.css';
 
 function App() {
   return (
