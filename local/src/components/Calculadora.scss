@@ -1,4 +1,51 @@
-.conversor {
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital@1&display=swap'); 
 
-    font-size: large;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Spline Sans Mono', monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #131010;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    height: 22rem;
+    width: 20rem;
+    background: #262626;
+
+    h1 {
+        color: #fff;
+        font-size: 36px;
+        letter-spacing: 0.2rem;
+    }
+
+}
+
+.img_button {
+    height: 2.5rem;
+    width: 2.5rem;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 320px) {
+    .conversor {
+        width: 18rem;
+    }
+}
+
