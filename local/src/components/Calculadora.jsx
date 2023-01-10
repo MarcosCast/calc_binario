@@ -1,6 +1,9 @@
 import './Calculadora.scss';
+
 import React from 'react';
 import { useState } from 'react';
+
+import logo from '../logo.svg'
 
 function Conversor() {
     const [numberBin, setNumberBin] = useState('');
@@ -14,6 +17,8 @@ function Conversor() {
         for (let i = 0; i < binArray.length; i++) {
             binNumberArray.push(parseInt(binArray[i]));
         }
+
+        
 
         for (let j = binNumberArray.length - 1; j >= 0; j--) {
             sum += (binNumberArray[j] * Math.pow(2, j))
@@ -41,10 +46,13 @@ function Conversor() {
         <div className="conversor">
             <div className="input">
                 <input type="text" className='numero_binario' placeholder='Número Binário'
-                /*onChange={e} value={numberBin}*/ />
+                onChange={(e) =>  { verifyInputNumber(e.target.value) && setNumberBin(e.target.value) }} 
+                value={numberBin}/>
+
+                <img src={logo} onClick={converterNumberBin} alt="a-button" className='a-button' />
 
                 <input type="text" className='numero_decimal' placeholder='Número Decimal' 
-                 /*value={numberDec}*/ />
+                 value={numberDec} />
             </div>
         </div>
     );
