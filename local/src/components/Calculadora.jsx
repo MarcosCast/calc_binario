@@ -3,7 +3,9 @@ import './Calculadora.scss';
 import React from 'react';
 import { useState } from 'react';
 
-import logo from '../logo.svg'
+import botao from '../img/Converter.jpg'
+import Github from '../img/github.png';
+import Linkedin from '../img/linkedin.png';
 
 function Conversor() {
     const [numberBin, setNumberBin] = useState('');
@@ -44,16 +46,27 @@ function Conversor() {
 
     return(
         <div className="conversor">
-            <div className="input">
+            
+                <h1> Conversor </h1>
+                <h2> Binário <span>para</span> Decimal </h2>
                 <input type="text" className='numero_binario' placeholder='Número Binário'
                 onChange={(e) =>  { verifyInputNumber(e.target.value) && setNumberBin(e.target.value) }} 
                 value={numberBin}/>
 
-                <img src={logo} onClick={converterNumberBin} alt="a-button" className='a-button' />
-
                 <input type="text" className='numero_decimal' placeholder='Número Decimal' 
                  value={numberDec} />
-            </div>
+
+                <img src={botao} onClick={converterNumberBin} alt="img_button" className='img_button' />   
+
+                <footer class="rodape">
+                    <p>Conversor em React</p>
+                    <span>Desenvolvido por Marcos Castro</span>
+                    <div class="rodape-media">
+                    <a href="https://github.com/MarcosCast"><img src={Linkedin} alt="github"/></a>
+                    
+                    <a href="https://www.linkedin.com/in/marcos--castro/"><img src={Github} alt="linkedin"/></a>
+                    </div>
+                </footer>           
         </div>
     );
 }

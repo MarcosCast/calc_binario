@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 700px;
     width: 100vw;
     font-family: 'Spline Sans Mono', monospace;
 
@@ -15,7 +15,10 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: #131010;
+    //background: #30313b;
+    background-position: auto;
+    background-size: cover;
+    background-image: url('https://tm.ibxk.com.br/2020/11/24/24215602887413.jpg?ims=1200x675');
 }
 
 .conversor {
@@ -23,24 +26,62 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10px;
-    height: 22rem;
-    width: 20rem;
-    background: #262626;
+    border-radius: 20px;
+    height: 450px;
+    width: 420px;
+    background: #3b3b3b;
 
     h1 {
-        color: #fff;
+        color: rgb(216, 208, 208);
         font-size: 36px;
-        letter-spacing: 0.2rem;
+        letter-spacing: 3.2px;
+    }
+    h2 {
+        color: #bebfc9;
+    }
+    span {
+        color: #22b6f1;
     }
 
 }
 
+.numero_binario,
+.numero_decimal {
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
 .img_button {
-    height: 2.5rem;
-    width: 2.5rem;
-    transform: rotate(90deg);
+    height: 50px;
+    width: 50px;
     cursor: pointer;
+}
+
+.rodape {
+    background-color: #3b3b3b;
+    width: 100%;
+    padding: 8px 28px;
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5px;
+    color: #FFF2E7;
+    margin-top: 30px;   
+}
+
+.rodape-media {
+  height: 48px;  
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 320px) {
