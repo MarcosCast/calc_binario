@@ -18,7 +18,7 @@ https://calc-binario-ikyr.vercel.app/
 
 ## 👨‍💻 Área do Desenvolvedor
 
-## 🛠️ Tecnologias utilizadas no desenvolvimento
+# 🛠️ Tecnologias utilizadas no desenvolvimento
 
 * React - Framework JavaScript
 * SCSS - Syntactically Awesome Style Sheets
