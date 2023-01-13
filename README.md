@@ -12,9 +12,9 @@ Desenvolver melhor meu React.JS, meu SCSS e manter o CTD.
 
 Apresentação do projeto em vídeo: em breve!
 
-#### 🚀 Deploy
+### 🚀 Deploy
 
-
+https://calc-binario-ikyr.vercel.app/
 
 ## 👨‍💻 Área do Desenvolvedor
 
