@@ -3,6 +3,8 @@ Uma calculadora binária, converte valor decimal para binario
 
 # Dificuldades
 
+![image](https://user-images.githubusercontent.com/118136902/212493531-b691704b-476c-4aa8-b178-b1b3e64d054f.png)
+
 A parte mais complicada foi na aplicação da função, pois queria algo mais robusto, porém o mais simples ficou mais funcional.
 
 # Aprendizados
